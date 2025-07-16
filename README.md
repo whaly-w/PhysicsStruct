@@ -1,7 +1,7 @@
 # Physics Struct
 A package containing set of classes for physics variables
 
-**Example**
+**Example** <br>
 <u>Create instance</u>, default value is (0, 0, 0)
 ```python
 data = vector3D()
