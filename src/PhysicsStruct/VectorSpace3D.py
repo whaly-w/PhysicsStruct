@@ -46,13 +46,6 @@ class cartesian_vector(vector3D):
         super().set(val)
         self.x, self.y, self.z = self.get()
         
-    # def transform(self, oren):
-    #     roll, pitch, yaw = oren
-    #     self.set(val= [
-    #         self.x * np.cos(pitch), 
-    #         self.y * np.cos(roll), 
-    #         self.z * np.cos(yaw) * np.sin(pitch)])
-        
     def rotate(self, oren):
         rotation = Rotation.from_euler('xyz', oren) 
         rotated_vector = rotation.apply(self.get())

@@ -8,7 +8,7 @@ version = "1.0.5"
 authors = [
   { name="Whaly-w", email="whalyforwork@gmail.com" },
 ]
-description = "A set of classes for physc is variables"
+description = "A set of classes for physcis variables"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -19,4 +19,3 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/whaly-w/PhysicsStruct"
-Issues = "https://github.com/whaly-w/PhysicsStruct"
