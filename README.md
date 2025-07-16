@@ -38,7 +38,7 @@ orientation = orientation_rpy()
 
 cord = cartesian_vector()
 # stored data in XYZ
-# include .rotate() to caluculate
+# include .rotate() to caluculate 3D Euler Rotation
 # .set() include increment mode => .set(inc= True)
 
 acc = IMU_acc()
