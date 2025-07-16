@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "PhyscisStuct"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
-  { name="Example Author", email="author@example.com" },
+  { name="Whaly-w", email="whalyforwork@gmail.com" },
 ]
-description = "A small example package"
+description = "A set of classes for physc is variables"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/whaly-w/PhysicsStruct"
+Issues = "https://github.com/whaly-w/PhysicsStruct"
