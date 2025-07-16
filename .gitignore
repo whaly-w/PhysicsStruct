@@ -1,3 +1,6 @@
 # Ignore the built files
 dist/
 src/PhysicsStruct.egg-info/
+
+# Ignore .toml file
+*.toml
