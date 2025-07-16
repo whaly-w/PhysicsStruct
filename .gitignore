@@ -3,4 +3,4 @@ dist/
 src/PhysicsStruct.egg-info/
 
 # Ignore .toml file
-*.toml
+pyproject.toml
