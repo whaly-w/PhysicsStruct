@@ -3,6 +3,9 @@ from scipy.spatial.transform import Rotation
 
 class vector3D():
     def __init__(self, val= (0, 0, 0)):
+        """
+        val -> [D1, D2, D3]
+        """
         self.set(val)
         self.txt = ['D1', 'D2', 'D3']
     
@@ -24,6 +27,9 @@ class vector3D():
 
 class orientation_rpy(vector3D):
     def __init__(self, oren= (0, 0, 0)):
+        """
+        oren -> [row, pitch, yaw]
+        """
         self.set(oren)
         self.txt = 'RPY'
         
@@ -37,6 +43,9 @@ class orientation_rpy(vector3D):
 
 class cartesian_vector(vector3D):
     def __init__(self, val= (0, 0, 0)):
+        """
+        val -> [x, y, z]
+        """
         self.set(val)
         self.txt = 'XYZ'
         
@@ -54,6 +63,9 @@ class cartesian_vector(vector3D):
 
 class IMU_acc(cartesian_vector):
     def __init__(self, acc= (0, 0, 0)):
+        """
+        val -> [x, y, z]
+        """
         super().__init__(acc)
         self.g = 9.807
         
