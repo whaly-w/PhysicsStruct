@@ -39,6 +39,10 @@ class orientation_rpy(vector3D):
         
     def get_deg(self, dec= 5):
         return np.array([round(np.degrees(i), dec) for i in self.get()])
+    
+    def set_ros2_geometry_msgs_quaternion(self, ros2_quat):
+        r = Rotation.from_quat([ros2_quat.x, ros2_quat.y, ros2_quat.z, ros2_quat.w])
+        self.set(r.as_euler('xyz'))
 
 
 class cartesian_vector(vector3D):
@@ -59,6 +63,13 @@ class cartesian_vector(vector3D):
         rotation = Rotation.from_euler('xyz', oren) 
         rotated_vector = rotation.apply(self.get())
         self.set(val= rotated_vector)
+        
+    def set_ros2_geometry_msgs_vector3(self, ros2_vector3):
+        self.set((
+            ros2_vector3.x,
+            ros2_vector3.y,
+            ros2_vector3.z
+        ))
         
 
 class IMU_acc(cartesian_vector):
